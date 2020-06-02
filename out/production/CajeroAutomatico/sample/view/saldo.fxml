@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SaldoController">
+   <children>
+      <VBox alignment="CENTER" layoutX="64.0" layoutY="158.0" prefHeight="284.0" prefWidth="217.0" spacing="30.0" style="-fx-border-color: #037ffc; -fx-border-width: 5; -fx-border-radius: 50;" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Label text="Su saldo es" textFill="#0335cd">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSaldo" textFill="#0335cd">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="64.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" onAction="#btnConsultar_action" style="-fx-background-color: #037ffc; -fx-background-radius: 15; -fx-border-radius: 15;" text="Consultar">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
